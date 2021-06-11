@@ -141,18 +141,19 @@ button:hover{
 }
 
 .artist{
-  display: block;
-    width:47%;
+  
+    width:45%;
     text-align:center;
     align-items: center;
 }
 .artist img{
-    display: flex;
-    width:80%;
-    height: 35%;
+    
+    width:75%;
+    height: 40%;
+    margin-bottom: 5%;
 }
 .artist p{
-    display: fle;
+    
 width:100%;
     font-size: 1.3rem;
     
@@ -168,16 +169,76 @@ the first one will be for ipads 768px  and last one for mobile with 500px */
     nav{
         width:50%;
     }
+
+    .artist p{
+    
+        width:100%;
+        font-size: 1.6rem;
+}
+    .artist img{
+        display: flex;
+        width:100%;
+        height: 40%;
+        margin-bottom: 5%;
 }
 
 
+/* lastly for mobile I will rearrange divs */
 @media (max-width: 500px){
 /* new parameters go here */
+nav a{
+    color:#626262;
+    font-size: 1.9rem;
+}
+nav span{
+    border-left:2px solid #626262;
+    
 
+}
+nav{
+    width:50%;
+    display:flex;
+    justify-content:space-between;
+    margin-top:5%;
+} 
 
+h1 {
+    font-size: 4rem;
+}
+.artists-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:85%;
+    margin:0 auto;
+    padding-top: 1%;
+}
+.artist{
+    display: block;
+      width:70%;
+      text-align:center;
+      align-items: center;
+  }
+  .artist img{
+      display: flex;
+      width:75%;
+      height: 40%;
+      margin-bottom: 5%;
+  }
+  .artist p{
+      
+  width:100%;
+      font-size: 1.3rem;
+      
+  }
+  .artist h2{
+      width:93%;
+      font-size: 1.9rem;
+      
+  }
 
 
 }
     
-
 
