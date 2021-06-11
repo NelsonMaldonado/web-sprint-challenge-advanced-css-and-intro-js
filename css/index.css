@@ -14,10 +14,11 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {  
 margin: 0;  
 padding: 0;  
-border: 0;  
+/* border: 0px solid black;   */
 font-size: 100%;  
 font: inherit;  
 vertical-align: baseline;  
+
 }
 /*GENERAL STYLES*/
 html{
@@ -36,6 +37,9 @@ h1, p, .name, .bio {
 h1{
     font-size:6rem;
     margin:0;
+    line-height: 1.1;
+    padding-bottom: 4%;
+    padding-top: 4%;
 }
 a {	
     text-decoration: none;	
@@ -87,23 +91,28 @@ nav span{
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .title-container div {	
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg');		
     background-position: center;	
+    background-size: cover;
     color: white;	
-    width:80%;
+    width:85%;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:60vh;
+   
     margin:5% 0;
+    padding: 10% 3%;
+    
 }	
 .title-container div:hover {	
     opacity: 80%;	
 }	
 .title-container hr{
-    width:80%;
+    width:95%;
+    margin-top: -1%;
 }
 button{
     padding:1% 3%;
@@ -119,22 +128,40 @@ button:hover{
     color:white;
     box-shadow: 2px 2px 1px white;
 }
+
+
 /*Artists Section Styles */
+
 .artists-container{
     display:flex;
     justify-content: space-around;
-    width:80%;
+    width:85%;
     margin:0 auto;
+    padding-top: 1%;
 }
 
 .artist{
-    width:40%;
+  display: block;
+    width:47%;
     text-align:center;
+    align-items: center;
 }
 .artist img{
-    width:100%;
+    display: flex;
+    width:80%;
+    height: 35%;
 }
-
+.artist p{
+    display: fle;
+width:100%;
+    font-size: 1.3rem;
+    
+}
+.artist h2{
+    width:93%;
+    font-size: 1.9rem;
+    
+}
 /*Here I will add mediea queries 
 the first one will be for ipads 768px  and last one for mobile with 500px */
 @media (max-width: 768px){
