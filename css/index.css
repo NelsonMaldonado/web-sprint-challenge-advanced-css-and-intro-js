@@ -1,3 +1,5 @@
+/* Improved by Nelson Maldonado 
+This css code has been optimized for 3 different screen sizes; Desktop, Ipad and Mobile. */
 /*CSS RESET*/
 html, body, div, span, applet, object, iframe,  
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
@@ -14,10 +16,12 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {  
 margin: 0;  
 padding: 0;  
-/* border: 0px solid black;   */
+border: 1px solid black;   
 font-size: 100%;  
 font: inherit;  
 vertical-align: baseline;  
+
+
 
 }
 /*GENERAL STYLES*/
@@ -93,7 +97,7 @@ nav span{
 }
 
 .title-container div {	
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg');		
+    background-image: url(/ForWebImgs/bgImage_50artists.jpg);	
     background-position: center;	
     background-size: cover;
     color: white;	
@@ -138,6 +142,7 @@ button:hover{
     width:85%;
     margin:0 auto;
     padding-top: 1%;
+    
 }
 
 .artist{
@@ -145,47 +150,56 @@ button:hover{
     width:45%;
     text-align:center;
     align-items: center;
+   
 }
 .artist img{
     
     width:75%;
-    height: 40%;
+    height: auto; /*this auto height prevents images from scaling unevenly*/
     margin-bottom: 5%;
 }
 .artist p{
     
-width:100%;
+    width:100%;
     font-size: 1.3rem;
+    margin-left: auto;
     
 }
 .artist h2{
-    width:93%;
+    width:100%;
     font-size: 1.9rem;
     
 }
 /*Here I will add mediea queries 
 the first one will be for ipads 768px  and last one for mobile with 500px */
-@media (max-width: 768px){
+@media (max-width: 768px){ 
+    /* This is the start for Ipad settings */
     nav{
         width:50%;
+    }
+
+    .artist {
+
     }
 
     .artist p{
     
         width:100%;
         font-size: 1.6rem;
+        margin-left: auto;
 }
     .artist img{
-        display: flex;
+        
         width:100%;
-        height: 40%;
+        height: auto;
         margin-bottom: 5%;
+/* this is the end for Ipad settings */
 }
 
 
 /* lastly for mobile I will rearrange divs */
 @media (max-width: 500px){
-/* new parameters go here */
+/* Mobile parameters start here*/
 nav a{
     color:#626262;
     font-size: 1.9rem;
@@ -215,10 +229,13 @@ h1 {
     padding-top: 1%;
 }
 .artist{
-    display: block;
+    display: flex;
+    flex-direction: column;
       width:70%;
       text-align:center;
       align-items: center;
+      margin-bottom: 10%;
+
   }
   .artist img{
       display: flex;
@@ -227,18 +244,18 @@ h1 {
       margin-bottom: 5%;
   }
   .artist p{
-      
-  width:100%;
-      font-size: 1.3rem;
+      width:100%;
+      font-size: 1.4rem;
       
   }
   .artist h2{
-      width:93%;
+      width:100%;
       font-size: 1.9rem;
+      text-align: center;
       
   }
 
-
+/* this is the end of mobile parameters */
 }
     
 
